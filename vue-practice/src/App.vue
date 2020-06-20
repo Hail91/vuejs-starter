@@ -1,19 +1,24 @@
+// Application UI here inside template.
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <test-component message="Hi Vue!" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Imports need to be inside of script tag.
+import HelloWorld from "./components/HelloWorld.vue";
+import testComponent from "./components/testComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    testComponent
   }
-}
+};
 </script>
 
 <style>
